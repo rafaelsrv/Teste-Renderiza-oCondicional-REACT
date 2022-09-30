@@ -27,12 +27,15 @@ function App() {
   
 
   return (
+    
 <div>
+   {visible===true && (<div className="Mensagem">{Message}</div>)}
     <p className="Resultado">{Resultado}</p>
 
       
+      
+        
       <div className="DivCentral">
-      {visible===true && (<div className="Mensagem">{Message}</div>)}  
       <button id="mais" onClick={()=>{setResultado(Resultado+1); setMessage(Message="Incrementando 1"); setVisible(visible=true)}}>Mais</button>
       <button id="menos" onClick={()=>{setResultado(Resultado-1); setMessage(Message="Decrementando 1"); setVisible(visible=true)}}>Menos</button>
       <button id="zero" onClick={()=>{setResultado(Resultado=0); setMessage(Message="Zerando Total"); setVisible(visible=true)}}>Zerar</button>

@@ -3,7 +3,11 @@
   align-items: center;
   padding-top: 200px;
   padding-left: 600px;
-  margin-top: -150px
+  margin-top: -150px;
+  position:relative;
+  z-index: 1;
+  
+  
 
 
 }
@@ -13,7 +17,8 @@
   background-color: blue;
   cursor: pointer;
   border-radius: 100%;
-  color: white
+  color: white;
+  
   
 }
 #menos{
@@ -21,14 +26,14 @@
   background-color: green;
   cursor: pointer;
   border-radius: 100%;
-  color: white
+  color: white;
 }
 #zero{
   margin:5px;
   background-color: red;
   cursor: pointer;
   border-radius: 100%;
-  color: white
+  color: white;
 }
 
 .Resultado{
@@ -39,5 +44,19 @@
   font-size: 30px;
 }
 .Mensagem{
-  color:brown;
-}
+  
+    width: 100%;
+    border: 1px solid #000;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 2em;
+    border-radius: 5px;
+    position:absolute;
+    z-index: 1;
+    
+  }
+ 
+  
+  
+  
+
