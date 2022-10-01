@@ -1,4 +1,4 @@
-import {useState } from 'react';
+import {useEffect, useState } from 'react';
 import './App.css';
 
 function App() {
@@ -7,21 +7,26 @@ function App() {
   let [Message, setMessage] = useState("")
   let [visible, setVisible] = useState(false)
   
-
+  let vamosFechar = false
   let zerar = function(){
     
     Message="";
     setVisible(visible=false)
     console.log(Message)
+    vamosFechar = true
+    
     
 
     
   }
-
-  if (visible === true){
-    setTimeout((zerar), 2000)
+  
+    if (visible === true){
+      setTimeout((zerar), 2000)
+      
     
+  
   }
+  
   
   
   
