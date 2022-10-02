@@ -21,7 +21,7 @@ function App() {
   }
   
     if (visible === true){
-      setTimeout((zerar), 2000)
+      setTimeout((zerar), 1800)
       
     
   
@@ -41,7 +41,7 @@ function App() {
       
         
       <div className="DivCentral">
-      <button id="mais" onClick={()=>{setResultado(Resultado+1); setMessage(Message="Incrementando 1"); setVisible(visible=true)}}>Mais</button>
+      <button id="mais" onClick={()=>{setResultado(Resultado+1); setMessage(Message="Incrementando 1"); setVisible(visible=true)}}>Maiss</button>
       <button id="menos" onClick={()=>{setResultado(Resultado-1); setMessage(Message="Decrementando 1"); setVisible(visible=true)}}>Menos</button>
       <button id="zero" onClick={()=>{setResultado(Resultado=0); setMessage(Message="Zerando Total"); setVisible(visible=true)}}>Zerar</button>
       
