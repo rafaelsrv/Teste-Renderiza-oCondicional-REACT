@@ -1,7 +1,7 @@
 import api from './components/Api';
 import './App.css';
 //import estados from './components/Estados';
-//import Contador from './components/Contador';
+import Contador from './components/Contador';
 import React, {Component} from 'react';
 
 class App extends Component{
@@ -22,7 +22,10 @@ class App extends Component{
     const {filmes} = this.state;
     return(
    
+      
    <div>
+    <Contador/>
+    
       <h1>Listar Filmes</h1>
       
       {filmes.map(filme => (
