@@ -12,7 +12,7 @@
   
   }
   
-  #mais{
+  .mais{
     margin:5px;
     background-color: blue;
     cursor: pointer;
@@ -21,14 +21,14 @@
     
     
   }
-  #menos{
+  .menos{
     margin:5px;
     background-color: green;
     cursor: pointer;
     border-radius: 100%;
     color: white;
   }
-  #zero{
+  .zero{
     margin:5px;
     background-color: red;
     cursor: pointer;
