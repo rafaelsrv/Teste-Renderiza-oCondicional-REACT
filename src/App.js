@@ -1,5 +1,6 @@
 import api from './components/Api';
 import './App.css';
+import Test from './components/Axios';
 //import estados from './components/Estados';
 import Contador from './components/Contador';
 import React, {Component} from 'react';
@@ -25,7 +26,8 @@ class App extends Component{
    
       
    <div>
-    <Contador/>
+    
+    <Test/>
     
       <h1>Listar Filmes!</h1>
       
