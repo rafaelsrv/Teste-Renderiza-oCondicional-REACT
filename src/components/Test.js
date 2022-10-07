@@ -1,29 +1,18 @@
 import axios from "axios";
 import React from "react";
+import Card from "./Card";
 
 const baseURL = "https://jsonplaceholder.typicode.com/posts";
 
 export default function Test() {
   const [post, setPost] = React.useState(null);
-
-
-
-  
+ 
 
   React.useEffect(() => {
     axios.get(baseURL).then((response) => {
       setPost(response.data)})
       
-
-      
-      
-      
-      //.then();
-      
-    
-    
   }, []);
-  
   
 
   if (!post) return null;
@@ -31,11 +20,21 @@ export default function Test() {
   return (
     <div>{post.length > 0 && (
         <div>
-            {post.map((itens)=><p>{itens.title}</p>)}
+            {post.map((itens, index)=>(
+                <div>
+                
+                <div> <li key={index}> {itens.id}: {itens.title}</li></div>
+                
+                <Card id={index}/> 
+                </div>
+                
+            ))}
         
-            <h1>bb</h1>
+                    
         </div>
-
+        
+        
+        
     )}
       
     </div>
