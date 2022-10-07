@@ -25,7 +25,7 @@ export default function Test() {
                 
                 <div> <li key={index}> {itens.id}: {itens.title}</li></div>
                 
-                <Card id={index}/> 
+                <Card id={itens.body}/> 
                 </div>
                 
             ))}
