@@ -1,3 +1,10 @@
 .cardEstilizado{
     background-color: blue;
+    width: 200px;
+    height: 200px;
+    border: red;
+    align-items: center;
+    border-color: red;
+    border: 1px;
+    display: flex;
 }
